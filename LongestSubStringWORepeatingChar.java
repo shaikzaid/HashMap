@@ -14,7 +14,7 @@ public class LongestSubStringWORepeatingChar {
         int max = 0;
 
         HashMap<Character, Integer> hm = new HashMap<>();
-        for (int i = 0; i < S.length(); i++) {
+        for (int i = 0; i < S.length(); i++) {  // i is just to let j know from where to start in next loop
             int count = 0;
             for (int j = i; j < S.length(); j++) { //inner j loop should run from present i position and the longest run of j will
                                                      // be the max / answer
